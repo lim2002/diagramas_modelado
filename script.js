@@ -1,8 +1,5 @@
-// Seleccionamos el botón y el menú
-const hamburger = document.getElementById('hamburger');
+// No necesitas modificar nada aquí, pero puedes añadir lógica extra si lo deseas.
 const navMenu = document.getElementById('nav-menu');
-
-// Agregamos un evento para abrir/cerrar el menú
-hamburger.addEventListener('click', () => {
-  navMenu.classList.toggle('show');
+navMenu.addEventListener('click', () => {
+  console.log('Menú abierto'); // Ejemplo de lógica adicional.
 });
