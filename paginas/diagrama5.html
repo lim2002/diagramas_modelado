@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulación de Flujo</title>
+  <link rel="stylesheet" href="/estilos/diagrama5.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simulación de Sistema de llegada de clientes</h1>
+    <form id="inputForm">
+      <label for="s">Numero de simulaciones (S):</label>
+      <input type="number" id="s" name="s" min="1" required>
+
+      <label for="t">Numero maximo de horas (NMH):</label>
+      <input type="number" id="nmh" name="nmh" min="1" required>
+
+      <label for="t">Costo unitario del articulo (CUA):</label>
+      <input type="number" id="cua" name="cua" min="1" required>
+
+      <label for="t">Precio de venta unitario (PVU):</label>
+      <input type="number" id="pvu" name="pvu" min="1" required>
+
+      <label for="t">Costo fijo unitario (CFD):</label>
+      <input type="number" id="cfd" name="cfd" min="1" required>
+
+      <button type="submit">Ejecutar Simulación</button>
+      <button type="reset" id="resetButton">Limpiar</button>
+      <button id="backToMenu">Volver al Menú</button>
+    </form>
+
+    <h2>Resultados</h2>
+    <div class="table-container">
+      <table id="resultsTable">
+        <thead>
+          <tr>
+            <th>Simulación</th>
+            <th>Ganacia neta (GN)</th>
+            <th>Total de articulos vendidos (TARTV)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Las filas se agregarán dinámicamente aquí -->
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Resultados Promediados</h2>
+    <p><strong>Ganacia neta:</strong> <span id="avg1"></span></p>
+    <p><strong>Total de articulos vendidos:</strong> <span id="avg2"></span></p>
+  </div>
+
+
+  
+
+  <script src="/scripts/diagrama5.js"></script>
+</body>
+</html>

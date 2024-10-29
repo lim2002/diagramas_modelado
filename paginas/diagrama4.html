@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulación de Flujo</title>
+  <link rel="stylesheet" href="/estilos/diagrama4.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simulación de Maximizar Z</h1>
+    <form id="inputForm">
+      <label for="s">Numero de simulaciones (S):</label>
+      <input type="number" id="s" name="s" min="1" required>
+
+      <label for="t">Numero maximo de Iteracions por Simulacion (NMI):</label>
+      <input type="number" id="nmi" name="nmi" min="1" required>
+
+      <button type="submit">Ejecutar Simulación</button>
+      <button type="reset" id="resetButton">Limpiar</button>
+      <button id="backToMenu">Volver al Menú</button>
+    </form>
+
+    <h2>Resultados</h2>
+    <div class="table-container">
+      <table id="resultsTable">
+        <thead>
+          <tr>
+            <th>Simulación</th>
+            <th>Z</th>
+            <th>X1</th>
+            <th>X2</th>
+            <th>X3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Las filas se agregarán dinámicamente aquí -->
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Resultados Promediados</h2>
+    <p><strong>Z:</strong> <span id="avg1"></span></p>
+    <p><strong>X1:</strong> <span id="avg2"></span></p>
+    <p><strong>X2:</strong> <span id="avg3"></span></p>
+    <p><strong>X3:</strong> <span id="avg4"></span></p>
+  </div>
+
+
+  
+
+  <script src="/scripts/diagrama4.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagrama de flujo</title>
+  <link rel="stylesheet" href="/estilos/diagrama2.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simulación de Sistema Demografico De Bolivia</h1>
+    <form id="inputForm">
+      <label for="ct">Desde que año empezará (CT):</label>
+      <input type="number" id="ct" name="ct" min="1" required>
+
+      <label for="t">Hasta qué año será (T):</label>
+      <input type="number" id="t" name="t" min="1" required>
+
+      <label for="pb">Población de Bolivia (PB):</label>
+      <input type="number" id="pb" name="pb" required>
+
+      <label for="tn">Tasa de Natalidad (TN):</label>
+      <input type="number" id="tn" name="tn" min="0" step="any" required>
+
+      <label for="tm">Tasa de Mortalidad (TM):</label>
+      <input type="number" id="tm" name="tm" min="0" step="any" required>
+
+      <button type="submit">Ejecutar Simulación</button>
+      <button type="reset" id="resetButton">Limpiar</button>
+      <button id="backToMenu" type="button">Volver al Menú</button>
+    </form>
+
+    <h2>Resultados</h2>
+    <div class="table-container">
+      <table id="resultsTable">
+        <thead>
+          <tr>
+            <th>Año</th>
+            <th>Población (PB)</th>
+            <th>Nacimientos (NAC)</th>
+            <th>Muertes (MUE)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Las filas se agregarán dinámicamente aquí -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="/scripts/diagrama2.js"></script>
+</body>
+</html>
