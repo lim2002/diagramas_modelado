@@ -12,7 +12,7 @@ const backToMenuButton = document.getElementById('backToMenu');
 // Agregamos el evento click al botón
 backToMenuButton.addEventListener('click', () => {
   // Cambia la URL a la página del menú
-  window.location.href = '../'; // Reemplaza esto con la URL correcta
+  window.location.href = 'index.html'; // Reemplaza esto con la URL correcta
 });
 
 // Capturamos el botón de limpiar
